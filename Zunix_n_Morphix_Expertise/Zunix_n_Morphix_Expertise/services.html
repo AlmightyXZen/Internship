@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - ZnME</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Space+Grotesk:wght@300..700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="src/styles/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollToPlugin.min.js"></script>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <svg class="logo-icon" viewBox="0 0 40 40" fill="none">
+                    <rect width="40" height="40" rx="10" fill="url(#logoGrad)" />
+                    <path d="M12 28V12L20 20L28 12V28" stroke="white" stroke-width="3" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    <defs>
+                        <linearGradient id="logoGrad" x1="0" y1="0" x2="40" y2="40">
+                            <stop offset="0%" stop-color="#6366f1" />
+                            <stop offset="100%" stop-color="#8b5cf6" />
+                        </linearGradient>
+                    </defs>
+                </svg>
+                <span>ZnME</span>
+            </a>
+            <div class="nav-links">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="services.html" class="nav-link active">Services</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </div>
+            <div class="nav-actions">
+                <a href="contact.html" class="nav-cta">Get Started</a>
+                <button class="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+        <div class="mobile-menu">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="about.html" class="nav-link">About</a>
+            <a href="services.html" class="nav-link active">Services</a>
+            <a href="contact.html" class="nav-link">Contact</a>
+            <a href="contact.html" class="nav-cta">Get Started</a>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="page-header-bg">
+            <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=1920&q=80" alt="Services">
+            <div class="page-header-overlay"></div>
+        </div>
+        <div class="page-header-content">
+            <span class="section-badge">What We Do</span>
+            <h1>Our <span class="gradient-text">Services</span></h1>
+            <p>Comprehensive solutions for all your digital needs</p>
+        </div>
+    </section>
+
+    <!-- Web Services -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Web Solutions</span>
+                <h2>Web Services</h2>
+                <p>In today's fast-growing business environment, web services are the key to future-proof your
+                    organization.</p>
+            </div>
+            <div class="services-detailed-grid">
+                <div class="service-detailed-card">
+                    <div class="service-detailed-img">
+                        <img src="https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=600&q=80"
+                            alt="Web Design">
+                    </div>
+                    <div class="service-detailed-content">
+                        <div class="service-icon-small">
+                            <i class="fas fa-palette"></i>
+                        </div>
+                        <h3>Web Designing</h3>
+                        <p>Attractive and informative designs that best suit your business. We create elegant,
+                            user-friendly websites that make a lasting impression.</p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check"></i> Responsive Design</li>
+                            <li><i class="fas fa-check"></i> User-Friendly Interface</li>
+                            <li><i class="fas fa-check"></i> Modern Aesthetics</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="service-detailed-card">
+                    <div class="service-detailed-img">
+                        <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=600&q=80"
+                            alt="Web Hosting">
+                    </div>
+                    <div class="service-detailed-content">
+                        <div class="service-icon-small">
+                            <i class="fas fa-server"></i>
+                        </div>
+                        <h3>Web Hosting</h3>
+                        <p>Tailor-made hosting plans with 99% uptime. Our reliable, fast, and secured servers ensure
+                            your website is always accessible.</p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check"></i> 99% Uptime</li>
+                            <li><i class="fas fa-check"></i> SSL Certificates</li>
+                            <li><i class="fas fa-check"></i> Daily Backups</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="service-detailed-card">
+                    <div class="service-detailed-img">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&q=80"
+                            alt="Web Applications">
+                    </div>
+                    <div class="service-detailed-content">
+                        <div class="service-icon-small">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                        <h3>Web Applications</h3>
+                        <p>Device-independent applications that let you manage your data from wherever you are. Access
+                            and store your data on secured web servers.</p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check"></i> Cross-Platform</li>
+                            <li><i class="fas fa-check"></i> Real-time Data</li>
+                            <li><i class="fas fa-check"></i> Secure Access</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="service-detailed-card">
+                    <div class="service-detailed-img">
+                        <img src="https://images.unsplash.com/photo-1544197150-b99a580bb7a8?w=600&q=80"
+                            alt="Cloud Services">
+                    </div>
+                    <div class="service-detailed-content">
+                        <div class="service-icon-small">
+                            <i class="fas fa-cloud"></i>
+                        </div>
+                        <h3>Cloud Services</h3>
+                        <p>Store, access, manage, and update your information from anywhere. Reduce dependency on
+                            volatile storage devices and prevent data loss.</p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check"></i> Scalable Storage</li>
+                            <li><i class="fas fa-check"></i> Data Protection</li>
+                            <li><i class="fas fa-check"></i> 24/7 Access</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="service-detailed-card">
+                    <div class="service-detailed-img">
+                        <img src="https://images.unsplash.com/photo-1596526131083-e8c633c948d2?w=600&q=80"
+                            alt="Mail Servers">
+                    </div>
+                    <div class="service-detailed-content">
+                        <div class="service-icon-small">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <h3>Mail Exchange Servers</h3>
+                        <p>Create professional email IDs with your organization's name. Dynamically allocate space and
+                            manage email IDs with easy-to-use tools.</p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check"></i> Custom Domains</li>
+                            <li><i class="fas fa-check"></i> Spam Protection</li>
+                            <li><i class="fas fa-check"></i> Large Attachments</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="service-detailed-card">
+                    <div class="service-detailed-img">
+                        <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?w=600&q=80" alt="CMS">
+                    </div>
+                    <div class="service-detailed-content">
+                        <div class="service-icon-small">
+                            <i class="fas fa-cubes"></i>
+                        </div>
+                        <h3>Content Management Systems</h3>
+                        <p>Work on legendary and the latest CMS platforms. Choose from variety of designs or get a
+                            customized design with embedded widgets.</p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check"></i> WordPress, Drupal & More</li>
+                            <li><i class="fas fa-check"></i> Easy Updates</li>
+                            <li><i class="fas fa-check"></i> SEO Optimized</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="service-detailed-card">
+                    <div class="service-detailed-img">
+                        <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&q=80"
+                            alt="E-Commerce">
+                    </div>
+                    <div class="service-detailed-content">
+                        <div class="service-icon-small">
+                            <i class="fas fa-shopping-cart"></i>
+                        </div>
+                        <h3>E-Commerce Solutions</h3>
+                        <p>Customized online shopping websites with application software and tools to manage your store.
+                            Full payment gateway integration included.</p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check"></i> Custom Stores</li>
+                            <li><i class="fas fa-check"></i> Payment Integration</li>
+                            <li><i class="fas fa-check"></i> Inventory Management</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="service-detailed-card">
+                    <div class="service-detailed-img">
+                        <img src="https://images.unsplash.com/photo-1432888498266-38ffec3eaf0a?w=600&q=80"
+                            alt="Digital Marketing">
+                    </div>
+                    <div class="service-detailed-content">
+                        <div class="service-icon-small">
+                            <i class="fas fa-bullhorn"></i>
+                        </div>
+                        <h3>E-Promotions & Digital Marketing</h3>
+                        <p>Boost your online presence with SEO, SEM, SMM, and CPC campaigns. Reach more customers and
+                            grow your business.</p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check"></i> SEO Optimization</li>
+                            <li><i class="fas fa-check"></i> Social Media Marketing</li>
+                            <li><i class="fas fa-check"></i> PPC Campaigns</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Software Solutions -->
+    <section class="section software-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Custom Development</span>
+                <h2>Customized Software Solutions</h2>
+                <p>Modernized yet user-friendly designs tailored to your organization's requirements.</p>
+            </div>
+            <div class="software-grid">
+                <div class="software-card">
+                    <div class="software-icon">
+                        <img src="https://images.unsplash.com/photo-1573164713988-8665fc963095?w=400&q=80"
+                            alt="Software">
+                    </div>
+                    <h3>Modernized Designs</h3>
+                    <p>Sleek, intuitive interfaces that users love</p>
+                </div>
+                <div class="software-card">
+                    <div class="software-icon">
+                        <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=400&q=80" alt="Custom">
+                    </div>
+                    <h3>Tailor Made Apps</h3>
+                    <p>Applications customized to your needs</p>
+                </div>
+                <div class="software-card">
+                    <div class="software-icon">
+                        <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=400&q=80"
+                            alt="Cross Platform">
+                    </div>
+                    <h3>Cross Platform</h3>
+                    <p>Web applications that work everywhere</p>
+                </div>
+                <div class="software-card">
+                    <div class="software-icon">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&q=80" alt="Reports">
+                    </div>
+                    <h3>Analysis Reports</h3>
+                    <p>Fully customized reporting solutions</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Business Solutions -->
+    <section class="section">
+        <div class="container">
+            <div class="business-grid">
+                <div class="business-card">
+                    <div class="business-icon">
+                        <i class="fas fa-sync-alt"></i>
+                    </div>
+                    <h3>Business Automation Analysis</h3>
+                    <p>Enhance and evolve legacy systems with modern solutions.</p>
+                    <ul class="business-features">
+                        <li><i class="fas fa-check-circle"></i> Less Time, Efforts & Mistakes</li>
+                        <li><i class="fas fa-check-circle"></i> Effective Resource Utilization</li>
+                        <li><i class="fas fa-check-circle"></i> Process Optimization</li>
+                    </ul>
+                </div>
+                <div class="business-card">
+                    <div class="business-icon">
+                        <i class="fas fa-building"></i>
+                    </div>
+                    <h3>E-Infrastructure Consultation</h3>
+                    <p>Complete infrastructure solutions for your business.</p>
+                    <ul class="business-features">
+                        <li><i class="fas fa-check-circle"></i> Software Solutions</li>
+                        <li><i class="fas fa-check-circle"></i> Computers & Hardware</li>
+                        <li><i class="fas fa-check-circle"></i> Network Peripherals</li>
+                        <li><i class="fas fa-check-circle"></i> Data Repositories</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Get Started?</h2>
+                <p>Let's discuss your project requirements.</p>
+                <div class="cta-btns">
+                    <a href="contact.html" class="btn btn-white">
+                        <i class="fas fa-envelope"></i>
+                        <span>Request a Quote</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo">
+                        <svg class="logo-icon" viewBox="0 0 40 40" fill="none">
+                            <rect width="40" height="40" rx="10" fill="url(#logoGrad2)" />
+                            <path d="M12 28V12L20 20L28 12V28" stroke="white" stroke-width="3" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <defs>
+                                <linearGradient id="logoGrad2" x1="0" y1="0" x2="40" y2="40">
+                                    <stop offset="0%" stop-color="#6366f1" />
+                                    <stop offset="100%" stop-color="#8b5cf6" />
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                        <span>ZnME</span>
+                    </a>
+                    <p>Zunix n Morphix Expertise - Your trusted partner for web services and software solutions since
+                        2008.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="services.html">Web Design</a></li>
+                        <li><a href="services.html">Software Dev</a></li>
+                        <li><a href="services.html">Cloud Services</a></li>
+                        <li><a href="services.html">E-Commerce</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contact Info</h4>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>022-2746 5168</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-mobile-alt"></i>
+                        <span>+91 9870 628 335</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>info@znme.in</span>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="current-year">2024</span> Zunix n Morphix Expertise. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+    <script src="src/scripts/main.js"></script>
+    <div class="loader-wrapper">
+        <div class="loader"></div>
+        <span class="loader-text">Loading...</span>
+    </div>
+    <div class="cursor-dot"></div>
+    <div class="cursor-circle"></div>
+</body>
+
+</html>
